@@ -1,22 +1,5 @@
 $(document).ready(function(){
 
-    // Homepage hero
-    const heroController = new ScrollMagic.Controller()
-
-    const heroTween = gsap.timeline()
-
-
-    heroTween.from(".hero__header h1", 1.5, {autoAlpha:0, x:-20})
-    heroTween.from(".hero-media", 1.5, {autoAlpha:0, x:-20})
-
-
-    const heroScene = new ScollMagic.Scene({
-        triggerElement: ".hero-js"
-    })
-
-        .setTween(heroTween)
-
-        .addTo(heroController)
 
 
     // action
@@ -59,6 +42,26 @@ $(document).ready(function(){
 
         .setTween(gsap.from(".info", 2, {autoAlpha:0, y:15}))
         .addTo(infoController)
+
+
+
+    // Homepage hero
+    const heroController = new ScrollMagic.Controller()
+
+    const heroTween = gsap.timeline()
+
+
+    heroTween.from(".hero__header h1", 1.5, {autoAlpha:0, x:-20})
+    heroTween.from(".hero-media", 1.5, {autoAlpha:0, x:-20})
+
+
+    const heroScene = new ScollMagic.Scene({
+        triggerElement: ".hero-js"
+    })
+
+        .setTween(heroTween)
+
+        .addTo(heroController)
 
 });
 
