@@ -15,31 +15,11 @@ $(document).ready(function(){
     })
 
         .setTween(heroTween)
-        // .addIndicators({
-        //     name: "hero"
-        // })
+
         .addTo(heroController)
 
 
-    // homepage - action
-    // const actionController =  new ScrollMagic.Controller()
-    //
-    // const actionTween = gsap.timeline()
-    //
-    // actionTween.from(".action img", 1.5, {autoAlpha:0, y:5})
-    // actionTween.from(".action__content", 0.1 ,{autoAlpha:0})
-    //
-    // const actionScene = new ScrollMagic.Scene({
-    //     triggerElement: ".action-js"
-    // })
-    //
-    //     .setTween(actionTween)
-    //     .addIndicators({
-    //         name: "actions"
-    //     })
-    //     .addTo(actionController)
-
-
+    // action
     const actionController2 =  new ScrollMagic.Controller()
 
     const actionScene2 = new ScrollMagic.Scene({
