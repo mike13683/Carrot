@@ -1,24 +1,24 @@
 $(document).ready(function(){
 
-    // // Homepage hero
-    // const heroController = new ScrollMagic.Controller()
-    //
-    // const heroTween = gsap.timeline()
-    //
-    //
-    // heroTween.from(".hero__header h1", 1.5, {autoAlpha:0, x:-20})
-    // heroTween.from(".hero-media", 1.5, {autoAlpha:0, x:-20})
-    //
-    //
-    // const heroScene = new ScollMagic.Scene({
-    //     triggerElement: ".hero-js"
-    // })
-    //
-    //     .setTween(heroTween)
-    //     .addIndicators({
-    //         name: "hero"
-    //     })
-    //     .addTo(heroController)
+    // Homepage hero
+    const heroController = new ScrollMagic.Controller()
+
+    const heroTween = gsap.timeline()
+
+
+    heroTween.from(".hero__header h1", 1.5, {autoAlpha:0, x:-20})
+    heroTween.from(".hero-media", 1.5, {autoAlpha:0, x:-20})
+
+
+    const heroScene = new ScollMagic.Scene({
+        triggerElement: ".hero-js"
+    })
+
+        .setTween(heroTween)
+        // .addIndicators({
+        //     name: "hero"
+        // })
+        .addTo(heroController)
 
 
     // homepage - action
@@ -48,9 +48,9 @@ $(document).ready(function(){
     })
 
         .setPin(".action__content-js")
-        .addIndicators({
-            name: "actions"
-        })
+        // .addIndicators({
+        //     name: "actions"
+        // })
         .addTo(actionController2)
 
 
@@ -65,9 +65,9 @@ $(document).ready(function(){
         .setTween(gsap.fromTo(".create-bg-colour", 2, {backgroundColor: "#eee"}, {backgroundColor: "#F3494A"}))
 
 
-        .addIndicators({
-            name: "create"
-        })
+        // .addIndicators({
+        //     name: "create"
+        // })
         .addTo(createController)
 
 
