@@ -7,15 +7,21 @@
 h1{
   font-weight:700;
   text-align: center;
-  font-size:rem-calc(65px)
+  font-size:rem-calc(50px)
 }
 
 h2{
   font-weight:300;
   text-align: center;
-  font-size:rem-calc(50px)
+  font-size:rem-calc(46px)
 }
 
 h3, h4{
   text-align: center;
 }
+//
+//section{
+//  @include media-breakpoint-up(lg){
+//    margin:150px 0;
+//  }
+//}
